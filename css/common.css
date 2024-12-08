@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+#categories {
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  height: 888px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#categories .item {
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+  width: 392px;
+  min-height: 216px;
+  background: #f6f6fe;
+  margin-bottom: 24px;
+  list-style: none;
+}
+#categories .item:last-child {
+  margin-bottom: 0;
+}
+.item ul {
+  padding-left: 0;
+}
+#categories .item li {
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  list-style: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font: 400 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  padding-top: 8px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+h2 {
+  font: 600 24px / 1.33333 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.gallery {
+  display: flex;
+  width: calc(100% -24px * 2) / 3;
+  gap: 24px;
+  padding-left: 0;
+  width: 1440px;
+  height: 848px;
+  background: #fff;
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  margin-right: 0;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font: 400 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-left: 16px;
+  padding-right: 140px;
+}
+h1 {
+  font: 600 24px / 1.33333 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-top: 16px;
+  margin-bottom: 0;
+  width: 248px;
+  height: 32px;
+  background: #fff;
+}
+.login-form {
+  width: 408px;
+  height: 256px;
+  border-radius: 8px;
+  padding: 24px;
+  background: #fff;
+}
+
+.login-form label {
+  font: 400 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 49px;
+  height: 0px;
+}
+
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+.login-form input:hover {
+  border: 1px solid #000;
+}
+.login-form input:active {
+  font: 400 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+}
+
+.login-form button {
+  font: 500 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  margin-top: 8px;
+  border: #000;
+}
+
+.login-form button:hover {
+  background: #6c8cff;
+}
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  background: #fff;
+}
+.change-color {
+  width: 148px;
+  height: 40px;
+  font: 500 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #4e75ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+#controls {
+  display: flex;
+  align-items: baseline;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 52px;
+  width: 150px;
+  height: 40px;
+  margin-right: 16px;
+  font: 400 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#controls button {
+  width: 120px;
+  margin-top: 0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  font: 500 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+#controls button[data-create] {
+  margin-right: 16px;
+  background-color: #4e75ff;
+}
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+#controls button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  border-radius: 8px;
+  padding: 32px 28px 32px 32px;
+  width: 486px;
+  height: 134px;
+  background: #f6f6fe;
+  gap: 44px;
+}
