@@ -33,7 +33,9 @@ function createImage(image) {
   imgEl.width = 360;
   imgEl.height = 300;
   imgEl.alt = image.alt;
-  return imgEl;
+  const galleryItemEl = document.createElement('li');
+  galleryItemEl.appendChild(imgEl);
+  return galleryItemEl;
 }
 const imgsEl = images.map(createImage);
 listGalery.append(...imgsEl);
